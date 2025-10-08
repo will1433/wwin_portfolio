@@ -86,15 +86,19 @@ function Hero() {
           </ul>
         </div>
 
-        <article className="card h-[280px]">
-          <div className="grid place-items-center text-center p-7 h-full rounded-2xl">
-            <div className="h-14 w-14 grid place-items-center rounded-xl border border-slate-300/60 dark:border-slate-600/80">{`{ }`}</div>
-            <p className="mt-3">
-              Highlights: Net+ labs (OSPF, STP, ACL), PL/SQL triggers, marketplace UX redesigns.
-              I like turning messy systems into simple products.
-            </p>
-          </div>
-        </article>
+        <article className="relative h-[280px] w-full p-[3px] rounded-2xl animate-gradient-border">
+  <div className="grid place-items-center text-center p-7 h-full rounded-2xl bg-gray-900">
+    <div className="h-14 w-14 grid place-items-center rounded-xl border border-slate-300/60 dark:border-slate-600/80 text-white">
+      {`{ }`}
+    </div>
+    <p className="mt-3 text-gray-300">
+      Networking (OSPF, STP, ACL), PL/SQL automation, UX redesigns.  
+      Simplifying complex systems into clean, simple products.
+    </p>
+  </div>
+</article>
+
+
       </div>
     </section>
   );

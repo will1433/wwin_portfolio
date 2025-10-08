@@ -1,9 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+// vite.config.js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// IMPORTANT: match your repo name for GitHub Pages
 export default defineConfig({
   plugins: [react()],
-  base: '/wwin_portfolio',
-})
-
+  base: process.env.NODE_ENV === "production" ? "/wwin_portfolio/" : "/", // 👈
+});
